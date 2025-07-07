@@ -42,7 +42,7 @@ Este proyecto implementa una API RESTful para la gestión de usuarios utilizando
 
     1. Clonar el repositorio
 
-        git clone https://github.com/tu-usuario/repo-proyecto.git
+        https://github.com/loanasdev/registros.git
 
     2. Compilar y ejecutar
         
