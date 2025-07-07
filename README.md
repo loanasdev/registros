@@ -20,38 +20,35 @@ Este proyecto implementa una API RESTful para la gestión de usuarios utilizando
         
 ## Formato de Respuesta JSON
 
-// Éxito
-{
-    "mensaje": "Operación exitosa",
-    "data": {
-        "id": "uuid-12345",
-        "nombre": "Juan Rodriguez",
-        "email": "juan@ejemplo.com",
-        "phones": [...],
-        "created": "2025-07-07T15:52:05Z",
-        "modified": "2025-07-07T15:52:05Z",
-        "last_login": "2025-07-07T15:52:05Z",
-        "token": "jwt-token",
-        "isActive": true
+    1. Éxito
+    {
+        "id": "9555c0d3-a151-4758-840a-b43a1f084e14",
+        "created": "2025-07-07T12:27:39.686174",
+        "modified": "2025-07-07T12:27:39.686174",
+        "last_login": "2025-07-07T12:27:39.686174",
+        "token": null,
+        "isactve": true
+    }    
+
+    2. Error
+    {
+        "mensaje": [
+            "El nombre de usuario ya existe.",
+            "El correo ya está registrado."
+        ]
     }
-}
-
-// Error
-{
-    "mensaje": "El correo ya registrado"
-}
-## Configuración
-
 
 ## Instrucciones de Ejecución
 
     1. Clonar el repositorio
 
-    git clone https://github.com/tu-usuario/repo-proyecto.git
+        git clone https://github.com/tu-usuario/repo-proyecto.git
 
     2. Compilar y ejecutar
         
+        Ejecute la aplicación desde su IDE navegando a la JwtDemoApplicationclase o use la línea de comando:
 
+        mvn spring -boot : run
 
     3. Probar API
         Registrar un usuario.
@@ -70,7 +67,6 @@ Este proyecto implementa una API RESTful para la gestión de usuarios utilizando
             "username": "usuario1",
             "password": "@Usuario123-"
         }   
-
 
 ## Características Implementadas
 
