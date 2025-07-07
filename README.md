@@ -1,23 +1,23 @@
 # API REST de Gestión de Usuarios
-## Índice
-[Descripción](#descripcion)
-[Estructura del Proyecto](#estructura-del-proyecto)
-[Arquitectura](#arquitectura)
-[Endpoints](#endpoints)
-[Formato de Respuesta JSON](#formato-de-respuesta-json)
-[Configuración](#configuracion)
-[Instrucciones de Ejecución](#instrucciones-de-ejecucion)
-[Características Implementadas](#caracteristicas-implementadas)
-[Requisitos Técnicos](#requisitos-tecnicos)
-[Notas Importantes](#notas-importantes)
 ## Descripción
 Este proyecto implementa una API RESTful para la gestión de usuarios utilizando Spring Boot, con persistencia en memoria mediante HSQLDB y manejo completo de errores en formato JSON.
 
-## Estructura del Proyecto
-
 ## Arquitectura
+    1. Project: Maven Project
+    2. Language: Java 21
+    3. Spring Boot.
+    4. Project Metadata:
+        Group: com.smartjob
+        Artifact: user-registration
+    5. Packaging: Jar    
+    6. Dependencies:
 
-## Explicación del Diagrama
+        Spring Web
+        Spring Security
+        Spring Data JPA
+        H2 Database
+        Lombok
+        
 ## Formato de Respuesta JSON
 
 // Éxito
