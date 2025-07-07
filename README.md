@@ -45,45 +45,50 @@ Este proyecto implementa una API RESTful para la gestión de usuarios utilizando
 
 ## Instrucciones de Ejecución
 
-1
-Clonar el repositorio
+    1. Clonar el repositorio
 
-git clone https://github.com/tu-usuario/repo-proyecto.git
+    git clone https://github.com/tu-usuario/repo-proyecto.git
 
-2
-Compilar y ejecutar
+    2. Compilar y ejecutar
+        
 
-./gradlew bootRun
 
-3
-Probar la API
+    3. Probar API
+        Registrar un usuario.
+        POST http://localhost:8080/api/auth/registrar
+        Content-Type: application/json
+        {
+            "username": "usuario1",
+            "email": "usuario1@demo.cl",
+            "password": "@Usuario123-"
+        }
 
-curl -X POST http://localhost:8080/api/v1/users/register \
--H "Content-Type: application/json" \
--d '{
-    "name": "Juan Rodriguez",
-    "email": "juan@ejemplo.com",
-    "password": "contraseña123",
-    "phones": [{
-        "number": "1234567",
-        "citycode": "1",
-        "countrycode": "57"
-    }]
-}'
+        Login de usuario
+        POST http://localhost:8080/api/auth/login
+        Content-Type: application/json
+        {
+            "username": "usuario1",
+            "password": "@Usuario123-"
+        }   
+
+
 ## Características Implementadas
-Persistencia en memoria con HSQLDB
-Manejo completo de errores en JSON
-Validación de formato de correo electrónico
-Generación automática de UUID y timestamps
-Token de acceso por usuario
-Documentación Swagger integrada (/swagger-ui.html)
+
+    1. Persistencia en memoria con HSQLDB
+    2. Manejo completo de errores en JSON
+    3. Validación de formato de correo electrónico
+    4. Generación automática de UUID y timestamps
+    5. Token de acceso por usuario
+    6. Documentación Swagger integrada (/swagger-ui.html)
+    
 ## Requisitos Técnicos
-Java 8+
-Gradle/Maven
-Spring Boot 2.x
-HSQLDB (incluido como dependencia)
+    1. Java 21
+    2. Maven
+    3. Spring Boot 3.5.3
+    4. HSQLDB (incluido como dependencia)
+
 ## Notas Importantes
-La base de datos se reinicia al reiniciar la aplicación
-Los tokens generados son UUIDs simples (opcional implementar JWT)
-Las pruebas unitarias están incluidas en el proyecto
-Swagger proporciona documentación interactiva de la API
+    1. La base de datos se reinicia al reiniciar la aplicación.
+    2. Los tokens generados son UUIDs simples (opcional implementar JWT).
+    3. Las pruebas unitarias están incluidas en el proyecto.
+    4. Swagger proporciona documentación interactiva de la API.
